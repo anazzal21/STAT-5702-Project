@@ -81,7 +81,6 @@ shinyServer(function(input, output) {
             par(mfrow = c(1, 2), mar = c(0, 0, 1, 0))
             plot(sim1, type = "network", at = 1, sims = "mean", col.status = TRUE, main = "Figure 2")
             plot(sim1, type = "network", at = 150, sims = "mean", col.status = TRUE, main = "Figure 3")
-            plot(sim1, type = "network", at = 10, sims = "mean", col.status = TRUE, main = "Figure 3")
         })
         
    #---------------------------------------- PLOTS ----------------------------------    
