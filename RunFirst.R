@@ -6,6 +6,7 @@ need_installed = required_packages[!(required_packages) %in% installed.packages(
 if (length(need_installed) > 0){
   install.packages(need_installed)
 }
+
 #Loading packages
 lapply(required_packages, require, character.only = TRUE)
 
