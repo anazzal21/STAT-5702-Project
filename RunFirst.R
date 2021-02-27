@@ -40,13 +40,3 @@ init2 <- init.net(i.num = 7500, r.num = 550)
 param2 <- param.net(inf.prob = 0.3, act.rate = 70, rec.rate = 0.8)
 control2 <- control.net(type = "SIR", nsteps = 216, nsims = 1, epi.by = "risk")
 sim2 <- netsim(est2, param2, init2, control2)
-
-
-
-
-
-plot(sim1, type = "network", at = 1, sims = "mean", col.status = TRUE, main = "Figure 2")
-plot(sim1, type = "network", at = 150, sims = "mean", col.status = TRUE, main = "Figure 3")
-
-plot(sim2, type = "network", at = 1, sims = "mean", col.status = TRUE, main = "Figure 5")
-plot(sim2, type = "network", at = 150, sims = "mean", col.status = TRUE, main = "Figure 6")
